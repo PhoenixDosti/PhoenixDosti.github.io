@@ -1,0 +1,48 @@
+.service {
+  padding: 25px 35px;
+  border-radius: 15px;
+  width: 100%;
+}
+.service h1{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-right: -20px;
+}
+.service strong {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.service ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+}
+
+.service ul li {
+  padding: 15px;
+  margin: 25px;
+  border-radius: 10px;
+}
+
+.service ul li p {
+  margin: 0;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.service ul li i {
+  margin-left: 20px;
+  color: #0c44bd;
+  font-size: 25px;
+}
+
+.service ul li p span {
+  color: #666;
+  font-size: 17px;
+}
+

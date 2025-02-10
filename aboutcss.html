@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقاله جامع درباره CSS</title>
+    <style>
+        body {
+            font-family: Yekan, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 10px 250px;
+        }
+        @font-face {
+            font-family: Yekan;
+            src: url(Fonts/Yekan.ttf);
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>مقاله جامع درباره CSS</h1>
+
+    <h2>مقدمه</h2>
+    <p>
+        CSS (شیوه‌نامه‌های آبشاری یا Cascading Style Sheets) یک زبان استایل‌دهی است که برای توصیف ظاهر و فرمت‌بندی اسناد HTML و XML استفاده می‌شود. CSS به توسعه‌دهندگان این امکان را می‌دهد تا ظاهر صفحات وب را کنترل کنند، از جمله رنگ‌ها، فونت‌ها، فاصله‌ها و چیدمان عناصر. با استفاده از CSS، می‌توان محتوا و طراحی را از هم جدا کرد، که این امر نگهداری و به‌روزرسانی کد را آسان‌تر می‌کند.
+    </p>
+
+    <h2>تاریخچه CSS</h2>
+    <p>
+        CSS در سال 1996 توسط کنسرسیوم جهانی وب (W3C) معرفی شد. هدف اصلی CSS این بود که به توسعه‌دهندگان وب اجازه دهد تا ظاهر صفحات وب را بدون تغییر در ساختار HTML کنترل کنند. اولین نسخه‌ی CSS (CSS1) در سال 1996 منتشر شد و پس از آن CSS2 در سال 1998 و CSS3 در سال 1999 معرفی شدند. CSS3 به دلیل ماژولار بودن، امکان اضافه کردن ویژگی‌های جدید را به صورت تدریجی فراهم کرد.
+    </p>
+
+    <h2>ساختار پایه‌ی یک سند CSS</h2>
+    <p>
+        یک سند CSS از قوانین (Rules) تشکیل شده است. هر قانون شامل یک انتخاب‌گر (Selector) و یک بلوک اعلان (Declaration Block) است. انتخاب‌گر مشخص می‌کند که کدام عناصر HTML باید استایل‌دهی شوند، و بلوک اعلان شامل یک یا چند ویژگی (Property) و مقدار (Value) است. به عنوان مثال:
+        <code>
+            p {
+                color: blue;
+                font-size: 16px;
+            }
+        </code>
+        در این مثال، تمام پاراگراف‌ها (<code>&lt;p&gt;</code>) به رنگ آبی و با اندازه فونت 16 پیکسل نمایش داده می‌شوند.
+    </p>
+
+    <h2>انواع روش‌های استفاده از CSS</h2>
+    <p>
+        CSS را می‌توان به سه روش مختلف در یک صفحه وب استفاده کرد:
+        <ul>
+            <li><strong>CSS داخلی (Inline):</strong> استایل‌ها مستقیماً درون تگ‌های HTML با استفاده از ویژگی <code>style</code> نوشته می‌شوند. این روش برای استایل‌دهی خاص یک عنصر استفاده می‌شود.</li>
+            <li><strong>CSS داخلی (Internal):</strong> استایل‌ها درون تگ <code>&lt;style&gt;</code> در بخش <code>&lt;head&gt;</code> سند HTML نوشته می‌شوند. این روش برای استایل‌دهی یک صفحه خاص مناسب است.</li>
+            <li><strong>CSS خارجی (External):</strong> استایل‌ها در یک فایل جداگانه با پسوند <code>.css</code> نوشته می‌شوند و سپس با استفاده از تگ <code>&lt;link&gt;</code> در بخش <code>&lt;head&gt;</code> سند HTML به آن لینک داده می‌شوند. این روش برای استایل‌دهی چندین صفحه وب به صورت همزمان مناسب است.</li>
+        </ul>
+    </p>
+
+    <h2>ویژگی‌های مهم CSS</h2>
+    <p>
+        برخی از ویژگی‌های مهم CSS عبارتند از:
+        <ul>
+            <li><strong>رنگ‌ها و پس‌زمینه‌ها:</strong> با استفاده از ویژگی‌هایی مانند <code>color</code>، <code>background-color</code> و <code>background-image</code> می‌توان رنگ متن و پس‌زمینه‌ی عناصر را تغییر داد.</li>
+            <li><strong>فونت‌ها:</strong> ویژگی‌هایی مانند <code>font-family</code>، <code>font-size</code> و <code>font-weight</code> به شما امکان کنترل فونت‌ها را می‌دهند.</li>
+            <li><strong>فاصله‌ها و چیدمان:</strong> ویژگی‌هایی مانند <code>margin</code>، <code>padding</code>، <code>display</code> و <code>position</code> به شما کمک می‌کنند تا چیدمان عناصر را کنترل کنید.</li>
+            <li><strong>انیمیشن‌ها و انتقال‌ها:</strong> CSS3 امکان ایجاد انیمیشن‌ها و انتقال‌های پیچیده را با استفاده از ویژگی‌هایی مانند <code>transition</code> و <code>animation</code> فراهم می‌کند.</li>
+        </ul>
+    </p>
+
+    <h2>CSS3 و ویژگی‌های جدید</h2>
+    <p>
+        CSS3 ویژگی‌های پیشرفته‌ای مانند:
+        <ul>
+            <li><strong>شبکه‌بندی (Flexbox و Grid):</strong> این سیستم‌های چیدمان به توسعه‌دهندگان امکان ایجاد طرح‌بندی‌های پیچیده و واکنش‌گرا را می‌دهند.</li>
+            <li><strong>سایه‌ها و گرادیان‌ها:</strong> با استفاده از ویژگی‌هایی مانند <code>box-shadow</code> و <code>linear-gradient</code> می‌توان جلوه‌های بصری جذابی ایجاد کرد.</li>
+            <li><strong>رسانه‌های واکنش‌گرا (Responsive Media):</strong> با استفاده از <code>@media</code> می‌توان استایل‌ها را بر اساس اندازه صفحه تنظیم کرد.</li>
+        </ul>
+    </p>
+
+    <h2>نتیجه‌گیری</h2>
+    <p>
+        CSS یک ابزار قدرتمند برای طراحی و استایل‌دهی صفحات وب است. با یادگیری CSS، می‌توانید ظاهر صفحات وب را به طور کامل کنترل کرده و تجربه کاربری بهتری ایجاد کنید. ترکیب HTML و CSS پایه‌ای اساسی برای توسعه وب فراهم می‌کند و در کنار جاوااسکریپت، این سه فناوری هسته اصلی توسعه وب مدرن را تشکیل می‌دهند.
+    </p>
+
+</body>
+</html>

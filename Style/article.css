@@ -54,8 +54,4 @@
   padding: 10px;
   margin: 10px;
 }
-.html-maghale,
-.js-maghale,
-.css-maghale:hover {
-  transform: translateX(10px);
-}
+

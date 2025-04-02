@@ -56,6 +56,6 @@
 }
 .html-maghale,
 .js-maghale,
-.css-maghale :hover {
-  transform: translate(10px);
+.css-maghale:hover {
+  transform: translateX(10px);
 }
